@@ -7,15 +7,15 @@ use Throwable;
 
 final class CallableThrowableLogger
 {
-    const MESSAGE = 'Uncaught Throwable %s: "%s" at %s line %s';
+    const MESSAGE = 'Uncaught Throwable %1$s: "%2$s" at %3$s line %4$s';
 
-    public static function create(LoggerInterface $logger, string $level = 'error'): callable
+    public static function create(LoggerInterface $logger, string $level = 'error', string $message = self::MESSAGE): callable
     {
-        return function (Throwable $throwable) use ($logger, $level) {
+        return function (Throwable $throwable) use ($logger, $level, $message) {
             $logger->log(
                 $level,
                 \sprintf(
-                    self::MESSAGE,
+                    $message,
                     \get_class($throwable),
                     $throwable->getMessage(),
                     $throwable->getFile(),
