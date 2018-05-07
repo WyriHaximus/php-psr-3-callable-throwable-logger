@@ -1,6 +1,6 @@
 # Callable throwable decorator around a [PSR-3](http://www.php-fig.org/psr/psr-3/) logger (to be used with [`react/promise`](https://reactphp.org/promise/) and [`reactivex/rxphp`](https://github.com/ReactiveX/RxPHP))
 
-[![Linux Build Status](https://travis-ci.org/WyriHaximus/php-psr-3-callable-throwable-logger.png)](https://travis-ci.org/WyriHaximus/php-psr-3-callable-throwable-logger)
+[![Linux Build Status](https://travis-ci.com/WyriHaximus/php-psr-3-callable-throwable-logger.png)](https://travis-ci.com/WyriHaximus/php-psr-3-callable-throwable-logger)
 [![Latest Stable Version](https://poser.pugx.org/WyriHaximus/psr-3-callable-throwable-logger/v/stable.png)](https://packagist.org/packages/WyriHaximus/psr-3-callable-throwable-logger)
 [![Total Downloads](https://poser.pugx.org/WyriHaximus/psr-3-callable-throwable-logger/downloads.png)](https://packagist.org/packages/WyriHaximus/psr-3-callable-throwable-logger/stats)
 [![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/php-psr-3-callable-throwable-logger/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/php-psr-3-callable-throwable-logger/?branch=master)
