@@ -32,7 +32,7 @@ final class CallableThrowableLoggerTest extends TestCase
                 $throwable->getLine()
             ),
             [
-                'throwable' => $throwable,
+                'exception' => $throwable,
             ]
         )->shouldBeCalled();
 

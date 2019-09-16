@@ -22,7 +22,7 @@ final class CallableThrowableLogger
                     $throwable->getLine()
                 ),
                 [
-                    'throwable' => $throwable,
+                    'exception' => $throwable,
                 ]
             );
         };
