@@ -2,6 +2,7 @@
 
 namespace WyriHaximus\PSR3\CallableThrowableLogger;
 
+use function Safe\sprintf;
 use Psr\Log\LoggerInterface;
 use Throwable;
 
@@ -14,7 +15,7 @@ final class CallableThrowableLogger
         return function (Throwable $throwable) use ($logger, $level, $message) {
             $logger->log(
                 $level,
-                \sprintf(
+                sprintf(
                     $message,
                     \get_class($throwable),
                     $throwable->getMessage(),
