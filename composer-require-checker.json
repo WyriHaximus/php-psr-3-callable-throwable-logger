@@ -1,0 +1,19 @@
+{
+  "symbol-whitelist" : [
+    "null", "true", "false",
+    "static", "self", "parent",
+    "array", "string", "int", "float", "bool", "iterable", "callable", "void", "object",
+    "Safe\\ksort", "React\\Promise\\all", "ApiClients\\Tools\\Rx\\observableFromArray",
+    "Safe\\sprintf", "ApiClients\\Tools\\Rx\\unwrapObservableFromPromise"
+  ],
+  "php-core-extensions" : [
+    "Core",
+    "date",
+    "pcre",
+    "Phar",
+    "Reflection",
+    "SPL",
+    "standard"
+  ],
+  "scan-files" : []
+}

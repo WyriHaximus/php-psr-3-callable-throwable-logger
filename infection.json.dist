@@ -6,9 +6,19 @@
         ]
     },
     "logs": {
-        "text": "infection.log"
+        "text": "infection-log.txt"
     },
     "mutators": {
-        "@default": true
+        "@default": true,
+        "FunctionCallRemoval": {
+            "ignore": [
+                "ReactInspector\\Metrics::_subscribe"
+            ]
+        },
+        "MethodCallRemoval": {
+            "ignore": [
+                "ReactInspector\\Metrics::removeObserver"
+            ]
+        }
     }
 }

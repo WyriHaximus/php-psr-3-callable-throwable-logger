@@ -2,15 +2,19 @@
 
 namespace WyriHaximus\Tests\PSR3\CallableThrowableLogger;
 
-use function Safe\sprintf;
 use Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Throwable;
 use WyriHaximus\PSR3\CallableThrowableLogger\CallableThrowableLogger;
+use function get_class;
+use function Safe\sprintf;
 
 final class CallableThrowableLoggerTest extends TestCase
 {
+    /**
+     * @return iterable<array<int, Throwable>>
+     */
     public function provideThrowables(): iterable
     {
         yield [new Exception('foo.bar')];
@@ -27,14 +31,12 @@ final class CallableThrowableLoggerTest extends TestCase
             'error',
             sprintf(
                 CallableThrowableLogger::MESSAGE,
-                \get_class($throwable),
+                get_class($throwable),
                 $throwable->getMessage(),
                 $throwable->getFile(),
                 $throwable->getLine()
             ),
-            [
-                'exception' => $throwable,
-            ]
+            ['exception' => $throwable]
         )->shouldBeCalled();
 
         $callable = CallableThrowableLogger::create($logger->reveal());
