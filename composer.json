@@ -9,17 +9,17 @@
     }
   ],
   "require": {
-    "php": "^7.4",
+    "php": "^7.4.7",
     "psr/log": "^1.0",
     "thecodingmachine/safe": "^1.0 || ^0.1.16"
   },
   "require-dev": {
     "wyrihaximus/psr-3-utilities": "^1.0",
-    "wyrihaximus/test-utilities": "^2.0"
+    "wyrihaximus/test-utilities": "^3.7.3"
   },
   "config": {
     "platform": {
-      "php": "7.4"
+      "php": "7.4.7"
     },
     "sort-packages": true
   },

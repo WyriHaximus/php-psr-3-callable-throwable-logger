@@ -4,4 +4,4 @@ parameters:
 			- Exception
 
 includes:
-	- vendor/wyrihaximus/test-utilities/rules.neon
+	- ../../vendor/wyrihaximus/test-utilities/rules.neon
