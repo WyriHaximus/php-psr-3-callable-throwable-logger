@@ -1,9 +1,0 @@
-filter:
-    paths: [src/*]
-    excluded_paths: [tests/*]
-build:
-    nodes:
-        analysis:
-            tests:
-                override:
-                    - php-scrutinizer-run --enable-security-analysis

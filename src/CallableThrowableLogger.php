@@ -1,9 +1,12 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\PSR3\CallableThrowableLogger;
 
 use Psr\Log\LoggerInterface;
 use Throwable;
+
 use function get_class;
 use function Safe\sprintf;
 

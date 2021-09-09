@@ -1,12 +1,15 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\Tests\PSR3\CallableThrowableLogger;
 
 use Exception;
-use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Throwable;
 use WyriHaximus\PSR3\CallableThrowableLogger\CallableThrowableLogger;
+use WyriHaximus\TestUtilities\TestCase;
+
 use function get_class;
 use function Safe\sprintf;
 
