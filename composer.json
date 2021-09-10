@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "php": "^7.4.7",
+    "php": "^8 || ^7.4.7",
     "psr/log": "^1.0",
     "thecodingmachine/safe": "^1.0 || ^0.1.16"
   },
