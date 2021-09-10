@@ -34,7 +34,7 @@ final class CallableThrowableLoggerTest extends TestCase
             'error',
             sprintf(
                 CallableThrowableLogger::MESSAGE,
-                get_class($throwable),
+                get_class($throwable), // phpcs:disable
                 $throwable->getMessage(),
                 $throwable->getFile(),
                 $throwable->getLine()
