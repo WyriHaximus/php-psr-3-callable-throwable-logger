@@ -21,7 +21,7 @@ final class CallableThrowableLogger
                 $level,
                 sprintf(
                     $message,
-                    get_class($throwable),
+                    get_class($throwable), // phpcs:disable
                     $throwable->getMessage(),
                     $throwable->getFile(),
                     $throwable->getLine()
