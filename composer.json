@@ -11,7 +11,7 @@
   "require": {
     "php": "^8 || ^7.4.7",
     "psr/log": "^3 || ^2 || ^1",
-    "thecodingmachine/safe": "^1.0 || ^0.1.16"
+    "thecodingmachine/safe": "^2 || ^1.0 || ^0.1.16"
   },
   "require-dev": {
     "wyrihaximus/psr-3-utilities": "^1.0",
@@ -28,6 +28,13 @@
     }
   },
   "config": {
+    "allow-plugins": {
+      "ocramius/package-versions": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true,
+      "icanhazstring/composer-unused": true,
+      "infection/extension-installer": true
+    },
     "platform": {
       "php": "7.4.7"
     },
