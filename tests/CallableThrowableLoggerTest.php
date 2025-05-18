@@ -5,44 +5,41 @@ declare(strict_types=1);
 namespace WyriHaximus\Tests\PSR3\CallableThrowableLogger;
 
 use Exception;
+use Mockery;
+use PHPUnit\Framework\Attributes\DataProvider;
 use Psr\Log\LoggerInterface;
 use Throwable;
 use WyriHaximus\PSR3\CallableThrowableLogger\CallableThrowableLogger;
 use WyriHaximus\TestUtilities\TestCase;
 
-use function get_class;
-use function Safe\sprintf;
+use function sprintf;
 
 final class CallableThrowableLoggerTest extends TestCase
 {
-    /**
-     * @return iterable<array<int, Throwable>>
-     */
-    public function provideThrowables(): iterable
+    /** @return iterable<array<int, Throwable>> */
+    public static function provideThrowables(): iterable
     {
         yield [new Exception('foo.bar')];
         yield [new CallableThrowableLoggerTestException('bar.foo')];
     }
 
-    /**
-     * @dataProvider provideThrowables
-     */
+    #[DataProvider('provideThrowables')]
     public function testCallable(Throwable $throwable): void
     {
-        $logger = $this->prophesize(LoggerInterface::class);
-        $logger->log(
+        $logger = Mockery::mock(LoggerInterface::class);
+        $logger->expects('log')->with(
             'error',
             sprintf(
                 CallableThrowableLogger::MESSAGE,
-                get_class($throwable), // phpcs:disable
+                $throwable::class, // phpcs:disable
                 $throwable->getMessage(),
                 $throwable->getFile(),
                 $throwable->getLine()
             ),
             ['exception' => $throwable]
-        )->shouldBeCalled();
+        )->atLeast()->once();
 
-        $callable = CallableThrowableLogger::create($logger->reveal());
+        $callable = CallableThrowableLogger::create($logger);
         $callable($throwable);
     }
 }
