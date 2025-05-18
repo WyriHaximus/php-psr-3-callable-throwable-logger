@@ -9,13 +9,13 @@
     }
   ],
   "require": {
-    "php": "^8 || ^7.4.7",
-    "psr/log": "^3 || ^2 || ^1",
-    "thecodingmachine/safe": "^2 || ^1.0 || ^0.1.16"
+    "php": "^8.3",
+    "psr/log": "^1 || ^2 || ^3"
   },
   "require-dev": {
-    "wyrihaximus/psr-3-utilities": "^1.0",
-    "wyrihaximus/test-utilities": "^5 || ^3.7.3"
+    "wyrihaximus/makefiles": "^0.4.2",
+    "wyrihaximus/psr-3-utilities": "^2.2.0",
+    "wyrihaximus/test-utilities": "^7.2.0"
   },
   "autoload": {
     "psr-4": {
@@ -29,14 +29,16 @@
   },
   "config": {
     "allow-plugins": {
-      "ocramius/package-versions": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "ergebnis/composer-normalize": true,
       "icanhazstring/composer-unused": true,
-      "infection/extension-installer": true
+      "infection/extension-installer": true,
+      "ocramius/package-versions": true,
+      "phpstan/extension-installer": true,
+      "wyrihaximus/makefiles": true
     },
     "platform": {
-      "php": "7.4.7"
+      "php": "8.3.13"
     },
     "sort-packages": true
   },

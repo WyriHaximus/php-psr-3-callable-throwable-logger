@@ -7,21 +7,25 @@ namespace WyriHaximus\PSR3\CallableThrowableLogger;
 use Psr\Log\LoggerInterface;
 use Throwable;
 
-use function get_class;
-use function Safe\sprintf;
+use function sprintf;
 
 final class CallableThrowableLogger
 {
-    public const MESSAGE = 'Uncaught Throwable %1$s: "%2$s" at %3$s line %4$s';
+    public const string MESSAGE = 'Uncaught Throwable %1$s: "%2$s" at %3$s line %4$s';
 
     public static function create(LoggerInterface $logger, string $level = 'error', string $message = self::MESSAGE): callable
     {
         return static function (Throwable $throwable) use ($logger, $level, $message): void {
+            /**
+             * Ignoring this because we're just passing it a long
+             *
+             * @phpstan-ignore psr3.interpolated,shipmonk.checkedExceptionInCallable
+             */
             $logger->log(
                 $level,
                 sprintf(
                     $message,
-                    get_class($throwable), // phpcs:disable
+                    $throwable::class, // phpcs:disable
                     $throwable->getMessage(),
                     $throwable->getFile(),
                     $throwable->getLine()
