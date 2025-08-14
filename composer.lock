@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87257a67521ecfda18d2c8644fc52ea6",
+    "content-hash": "747a8709648fb3001ee164c0d30f9208",
     "packages": [
         {
             "name": "psr/log",
@@ -9031,16 +9031,16 @@
         },
         {
             "name": "wyrihaximus/makefiles",
-            "version": "0.4.2",
+            "version": "0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/Makefiles.git",
-                "reference": "6641d81adf2fd286fa05893072596f9e55a0c888"
+                "reference": "8c917764c88465d3029c417c42af9885ec6442f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/Makefiles/zipball/6641d81adf2fd286fa05893072596f9e55a0c888",
-                "reference": "6641d81adf2fd286fa05893072596f9e55a0c888",
+                "url": "https://api.github.com/repos/WyriHaximus/Makefiles/zipball/8c917764c88465d3029c417c42af9885ec6442f7",
+                "reference": "8c917764c88465d3029c417c42af9885ec6442f7",
                 "shasum": ""
             },
             "require": {
@@ -9049,7 +9049,7 @@
                 "php": "^8.3"
             },
             "require-dev": {
-                "wyrihaximus/test-utilities": "^7.0.0"
+                "wyrihaximus/test-utilities": "^7.5.1"
             },
             "type": "composer-plugin",
             "extra": {
@@ -9073,7 +9073,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/Makefiles/issues",
-                "source": "https://github.com/WyriHaximus/Makefiles/tree/0.4.2"
+                "source": "https://github.com/WyriHaximus/Makefiles/tree/0.4.3"
             },
             "funding": [
                 {
@@ -9081,7 +9081,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-05T12:59:35+00:00"
+            "time": "2025-06-23T09:26:35+00:00"
         },
         {
             "name": "wyrihaximus/phpstan-rules-wrapper",
