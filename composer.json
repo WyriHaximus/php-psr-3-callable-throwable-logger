@@ -9,13 +9,13 @@
     }
   ],
   "require": {
-    "php": "^8.3",
+    "php": "^8.4",
     "psr/log": "^1 || ^2 || ^3"
   },
   "require-dev": {
     "wyrihaximus/makefiles": "^0.5.0",
     "wyrihaximus/psr-3-utilities": "^2.2.0",
-    "wyrihaximus/test-utilities": "^7.5.2"
+    "wyrihaximus/test-utilities": "^8.5.0"
   },
   "autoload": {
     "psr-4": {
@@ -35,19 +35,20 @@
       "infection/extension-installer": true,
       "ocramius/package-versions": true,
       "phpstan/extension-installer": true,
-      "wyrihaximus/makefiles": true
+      "wyrihaximus/makefiles": true,
+      "wyrihaximus/test-utilities": true
     },
     "platform": {
-      "php": "8.3.13"
+      "php": "8.4.13"
     },
     "sort-packages": true
   },
   "scripts": {
     "post-install-cmd": [
-      "composer normalize"
+      "make on-install-or-update || true"
     ],
     "post-update-cmd": [
-      "composer normalize"
+      "make on-install-or-update || true"
     ]
   }
 }
