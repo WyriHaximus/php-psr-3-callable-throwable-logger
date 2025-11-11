@@ -7,6 +7,7 @@ namespace WyriHaximus\Tests\PSR3\CallableThrowableLogger;
 use Exception;
 use Mockery;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 use Psr\Log\LoggerInterface;
 use Throwable;
 use WyriHaximus\PSR3\CallableThrowableLogger\CallableThrowableLogger;
@@ -24,7 +25,8 @@ final class CallableThrowableLoggerTest extends TestCase
     }
 
     #[DataProvider('provideThrowables')]
-    public function testCallable(Throwable $throwable): void
+    #[Test]
+    public function callable(Throwable $throwable): void
     {
         $logger = Mockery::mock(LoggerInterface::class);
         $logger->expects('log')->with(
