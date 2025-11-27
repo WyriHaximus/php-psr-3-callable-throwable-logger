@@ -13,7 +13,7 @@
     "psr/log": "^1 || ^2 || ^3"
   },
   "require-dev": {
-    "wyrihaximus/makefiles": "^0.7.12",
+    "wyrihaximus/makefiles": "^0.7.14",
     "wyrihaximus/psr-3-utilities": "^2.2.0",
     "wyrihaximus/test-utilities": "^8.7.0"
   },
