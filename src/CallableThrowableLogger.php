@@ -13,13 +13,14 @@ final class CallableThrowableLogger
 {
     public const string MESSAGE = 'Uncaught Throwable %1$s: "%2$s" at %3$s line %4$s';
 
+    /** @api */
     public static function create(LoggerInterface $logger, string $level = 'error', string $message = self::MESSAGE): callable
     {
         return static function (Throwable $throwable) use ($logger, $level, $message): void {
             /**
              * Ignoring this because we're just passing it a long
              *
-             * @phpstan-ignore psr3.interpolated,shipmonk.checkedExceptionInCallable
+             * @phpstan-ignore psr3.interpolated
              */
             $logger->log(
                 $level,
