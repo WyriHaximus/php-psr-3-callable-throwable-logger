@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da8558496cef572ca243ea59be6ee0cd",
+    "content-hash": "11340f2d2fc7c8af9d29f7fa9b59c023",
     "packages": [
         {
             "name": "psr/log",
@@ -3827,16 +3827,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "12.5.1",
+            "version": "12.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "c467c59a4f6e04b942be422844e7a6352fa01b57"
+                "reference": "4a9739b51cbcb355f6e95659612f92e282a7077b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c467c59a4f6e04b942be422844e7a6352fa01b57",
-                "reference": "c467c59a4f6e04b942be422844e7a6352fa01b57",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/4a9739b51cbcb355f6e95659612f92e282a7077b",
+                "reference": "4a9739b51cbcb355f6e95659612f92e282a7077b",
                 "shasum": ""
             },
             "require": {
@@ -3851,7 +3851,7 @@
                 "sebastian/environment": "^8.0.3",
                 "sebastian/lines-of-code": "^4.0",
                 "sebastian/version": "^6.0",
-                "theseer/tokenizer": "^2.0"
+                "theseer/tokenizer": "^2.0.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^12.5.1"
@@ -3892,7 +3892,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.5.1"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.5.2"
             },
             "funding": [
                 {
@@ -3912,7 +3912,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-12-08T07:17:58+00:00"
+            "time": "2025-12-24T07:03:04+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4161,16 +4161,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "12.5.4",
+            "version": "12.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "4ba0e923f9d3fc655de22f9547c01d15a41fc93a"
+                "reference": "ab8e4374264bc65523d1458d14bf80261577e01f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4ba0e923f9d3fc655de22f9547c01d15a41fc93a",
-                "reference": "4ba0e923f9d3fc655de22f9547c01d15a41fc93a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ab8e4374264bc65523d1458d14bf80261577e01f",
+                "reference": "ab8e4374264bc65523d1458d14bf80261577e01f",
                 "shasum": ""
             },
             "require": {
@@ -4184,7 +4184,7 @@
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.3",
-                "phpunit/php-code-coverage": "^12.5.1",
+                "phpunit/php-code-coverage": "^12.5.2",
                 "phpunit/php-file-iterator": "^6.0.0",
                 "phpunit/php-invoker": "^6.0.0",
                 "phpunit/php-text-template": "^5.0.0",
@@ -4238,7 +4238,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.5.4"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.5.6"
             },
             "funding": [
                 {
@@ -4262,7 +4262,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-12-15T06:05:34+00:00"
+            "time": "2026-01-16T16:28:10+00:00"
         },
         {
             "name": "psr/clock",
@@ -4440,16 +4440,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.2.2",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "5b353f7457b9a0c63fc91ef340f5d119a40991ed"
+                "reference": "e1aaf3061e9ae9342ed0824865e3a3360defddeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/5b353f7457b9a0c63fc91ef340f5d119a40991ed",
-                "reference": "5b353f7457b9a0c63fc91ef340f5d119a40991ed",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/e1aaf3061e9ae9342ed0824865e3a3360defddeb",
+                "reference": "e1aaf3061e9ae9342ed0824865e3a3360defddeb",
                 "shasum": ""
             },
             "require": {
@@ -4488,7 +4488,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.2.2"
+                "source": "https://github.com/rectorphp/rector/tree/2.2.1"
             },
             "funding": [
                 {
@@ -4496,7 +4496,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-09T19:50:20+00:00"
+            "time": "2025-10-06T21:25:14+00:00"
         },
         {
             "name": "revolt/event-loop",
@@ -8964,16 +8964,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "10.0.0",
+            "version": "11.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "3b8471be42fdd77ce43f4187d88d1ebbbfbd2e8e"
+                "reference": "b55a37f97f9dfd7abe567135ff2905888d8fbf32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/3b8471be42fdd77ce43f4187d88d1ebbbfbd2e8e",
-                "reference": "3b8471be42fdd77ce43f4187d88d1ebbbfbd2e8e",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/b55a37f97f9dfd7abe567135ff2905888d8fbf32",
+                "reference": "b55a37f97f9dfd7abe567135ff2905888d8fbf32",
                 "shasum": ""
             },
             "require": {
@@ -8990,8 +8990,8 @@
                 "php-parallel-lint/php-console-highlighter": "^1.0.0",
                 "php-parallel-lint/php-parallel-lint": "^1.4.0",
                 "phpstan/phpstan": "^2.1.33",
-                "phpunit/phpunit": "^12.5.4",
-                "rector/rector": "^2.2.1",
+                "phpunit/phpunit": "^12.5.6",
+                "rector/rector": "2.2.1",
                 "roave/backward-compatibility-check": "^8.17.0",
                 "squizlabs/php_codesniffer": "^4.0.1",
                 "wyrihaximus/coding-standard": "^4.0.0",
@@ -9002,7 +9002,7 @@
                 "wyrihaximus/makefiles": "<0.5.0"
             },
             "require-dev": {
-                "wyrihaximus/makefiles": "^0.7.16"
+                "wyrihaximus/makefiles": "^0.8.0"
             },
             "suggest": {
                 "wyrihaximus/async-test-utilities": "The recommended addition to this package when building ReactPHP packages and projects.",
@@ -9035,7 +9035,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/10.0.0"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/11.0.0"
             },
             "funding": [
                 {
@@ -9043,7 +9043,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-01-14T17:38:39+00:00"
+            "time": "2026-01-18T23:33:44+00:00"
         },
         {
             "name": "yamadashy/phpstan-friendly-formatter",
