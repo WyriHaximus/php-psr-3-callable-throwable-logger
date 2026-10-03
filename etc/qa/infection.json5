@@ -25,5 +25,6 @@
         "GreaterThan": false,
         "InstanceOf_": false,
         "Minus": false
-    }
+    },
+    "threads": 64
 }
