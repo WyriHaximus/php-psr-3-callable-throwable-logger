@@ -1,12 +1,12 @@
-# Callable throwable decorator around a [PSR-3](http://www.php-fig.org/psr/psr-3/) logger (to be used with [`react/promise`](https://reactphp.org/promise/) and [`reactivex/rxphp`](https://github.com/ReactiveX/RxPHP))
+# Callable throwable decorator around a [PSR-3](http://www.php-fig.org/psr/psr-3/) logger (to be used with [`react/promise`](https://reactphp.org/promise/) and [RxPHP](https://github.com/ReactiveX/RxPHP))
 
-[![Continuous Integration](https://github.com/WyriHaximus/php-psr-3-callable-throwable-logger/actions/workflows/ci.yml/badge.svg)](https://github.com/WyriHaximus/php-psr-3-callable-throwable-logger/actions/workflows/ci.yml)
+[![Continuous Integration](https://github.com/WyriHaximus/php-psr-3-callable-throwable-logger/actions/workflows/ci.yaml/badge.svg)](https://github.com/WyriHaximus/php-psr-3-callable-throwable-logger/actions/workflows/ci.yaml)
 [![Latest Stable Version](https://poser.pugx.org/WyriHaximus/psr-3-callable-throwable-logger/v/stable.png)](https://packagist.org/packages/WyriHaximus/psr-3-callable-throwable-logger)
 [![Total Downloads](https://poser.pugx.org/WyriHaximus/psr-3-callable-throwable-logger/downloads.png)](https://packagist.org/packages/WyriHaximus/psr-3-callable-throwable-logger/stats)
 [![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/php-psr-3-callable-throwable-logger/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/php-psr-3-callable-throwable-logger/?branch=master)
 [![License](https://poser.pugx.org/WyriHaximus/psr-3-callable-throwable-logger/license.png)](https://packagist.org/packages/wyrihaximus/psr-3-callable-throwable-logger)
 
-### Installation ###
+## Installation
 
 To install via [Composer](http://getcomposer.org/), use the command below, it will automatically detect the latest version and bind it with `^`.
 
@@ -26,10 +26,10 @@ $reactPromise->then(function () {
 }, CallableThrowableLogger::create($logger));
 ```
 
-## Usage with [`reactivex/rxphp`](https://github.com/ReactiveX/RxPHP)
+## Usage with [RxPHP](https://github.com/ReactiveX/RxPHP)
 
-Whenever an errors comes from the stream the closure from `CallableThrowableLogger::create`  will be invoked and
-and `error` message will be logged to `$logger`.
+Whenever an error is emitted from the stream, the closure from `CallableThrowableLogger::create` will be invoked and
+an `error` message will be logged to `$logger`.
 
 ```php
 $logger = new Psr3Logger();
@@ -54,11 +54,11 @@ CallableThrowableLogger::create(
 );
 ```
 
-## Contributing ##
+## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-## License ##
+## License
 
 Copyright 2026 [Cees-Jan Kiewiet](http://wyrihaximus.net/)
 
