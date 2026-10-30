@@ -1,4 +1,4 @@
-# Callable throwable decorator around a [PSR-3](http://www.php-fig.org/psr/psr-3/) logger (to be used with [`react/promise`](https://reactphp.org/promise/) and [`reactivex/rxphp`](https://github.com/ReactiveX/RxPHP))
+# Callable throwable decorator around a [PSR-3](http://www.php-fig.org/psr/psr-3/) logger (to be used with [`react/promise`](https://reactphp.org/promise/) and [RxPHP](https://github.com/ReactiveX/RxPHP))
 
 [![Continuous Integration](https://github.com/WyriHaximus/php-psr-3-callable-throwable-logger/actions/workflows/ci.yaml/badge.svg)](https://github.com/WyriHaximus/php-psr-3-callable-throwable-logger/actions/workflows/ci.yaml)
 [![Latest Stable Version](https://poser.pugx.org/WyriHaximus/psr-3-callable-throwable-logger/v/stable.png)](https://packagist.org/packages/WyriHaximus/psr-3-callable-throwable-logger)
@@ -26,7 +26,7 @@ $reactPromise->then(function () {
 }, CallableThrowableLogger::create($logger));
 ```
 
-## Usage with [`reactivex/rxphp`](https://github.com/ReactiveX/RxPHP)
+## Usage with [RxPHP](https://github.com/ReactiveX/RxPHP)
 
 Whenever an error is emitted from the stream, the closure from `CallableThrowableLogger::create` will be invoked and
 an `error` message will be logged to `$logger`.
